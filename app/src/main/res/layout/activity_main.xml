@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Enter Minutes Here"
+            android:background="#E3E0E0"
+            android:textColor="@color/black"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/etsec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Seconds Here"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            android:background="#E3E0E0"
+            android:textColor="@color/black"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="Start Timer"
+        android:layout_below="@id/ll1"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/sethour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="130dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/setcol1"
+        android:layout_toRightOf="@id/sethour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/setmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/setcol1"
+        android:text="00"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/setcol2"
+        android:layout_toRightOf="@id/setmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/setsec"
+        android:layout_toRightOf="@id/setcol2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+
+        android:textStyle="bold"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setmin"
+        android:layout_centerHorizontal="true"
+        android:text="Pause"
+        android:layout_marginTop="100dp"
+        />
+
+</RelativeLayout>
